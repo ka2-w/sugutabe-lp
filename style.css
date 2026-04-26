@@ -1,4 +1,4 @@
-@charset "UFT-8";
+@charset "UTF-8";
 
 :root {
     --wine-red: #AB2024;
@@ -12,6 +12,12 @@
     --pink: #FF7272;
     --usui-green: rgba(30, 124, 9, 0.47);
 }
+
+html {
+    scroll-padding-top: 70px; 
+    scroll-behavior: smooth; /
+}
+
 
 .pc-header {
     display: block;
@@ -32,6 +38,11 @@ img {
 }
 
 @media screen and (min-width:640px) {
+
+    html {
+        /* PCヘッダーの高さに合わせて調整 */
+        scroll-padding-top: 100px;
+    }
 
     /* ===============================
    vf
@@ -134,7 +145,7 @@ img {
     background: var(--skin-color);
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
     transition: right 0.3s ease;
-    z-index: 999;
+    z-index: 1001;
     padding: 100px 0px;
 }
 
@@ -1485,7 +1496,6 @@ img {
    =============================== */
 .sp-header {
     background-color: white;
-    margin: -10px;
     border-bottom: 1px solid #ddd;
     position: sticky;
     top: 0;
@@ -1521,10 +1531,11 @@ img {
 }
 
 .farmer__img-pc {
-    display: none;  
+    display: none;
 }
+
 .farmer__img-sp {
-    display: block;  
+    display: block;
 }
 
 
@@ -1538,7 +1549,7 @@ img {
         display: block;
     }
 
-     .drawer {
+    .drawer {
         display: none;
     }
 
@@ -1689,11 +1700,13 @@ img {
     }
 
     .farmer__img-pc {
-        display: block; /* PC版を表示 */
+        display: block;
+        /* PC版を表示 */
     }
 
     .farmer__img-sp {
-        display: none;  /* スマホ版を非表示 */
+        display: none;
+        /* スマホ版を非表示 */
     }
 
     .lineup__img {
@@ -1829,7 +1842,7 @@ img {
         flex-direction: row;
         align-items: center;
 
-      
+
     }
 
     .review__figure {
