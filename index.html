@@ -92,7 +92,7 @@
                     </div>
             </section>
             <!-- about -->
-            <section id="about" class="about"> 
+            <section id="about" class="about">
             </section>
             <!-- ↑ページ移動用 -->
             <section class="about">
@@ -143,7 +143,7 @@
             </section>
 
             <!-- lineup -->
-             <section id="trial" class="lineup">
+            <section id="trial" class="lineup">
             </section>
             <!-- ↑ページ移動用 -->
             <section class="lineup">
@@ -369,7 +369,7 @@
             </section>
 
             <!-- farmer -->
-             <section id="farmers" class="farmer">
+            <section id="farmers" class="farmer">
             </section>
             <!-- ↑ページ移動用 -->
             <section class="farmer">
@@ -444,7 +444,7 @@
             </section>
 
             <!-- review -->
-             <section id="voice" class="review">
+            <section id="voice" class="review">
             </section>
             <!-- ↑ページ移動用 -->
             <section class="review">
@@ -705,23 +705,25 @@
     <script>
         const toggleBtn = document.getElementById('drawer-toggle');
         const drawer = document.getElementById('drawer');
-
-        toggleBtn.addEventListener('click', () => {
-            drawer.classList.toggle('is-open');
-        });
-    </script>
-
-    <!--drawer mene  -->
-    <script>
-        // ドロワー内の全てのリンクを取得
         const drawerLinks = document.querySelectorAll('.drawer__list a');
+        // メニューのリンクを押したときは、強制的に閉じるようにする
 
-        // 各リンクに対してクリックイベントを設定
+        if (toggleBtn && drawer) {
+            toggleBtn.addEventListener('click', () => {
+                // メニューの開閉
+                drawer.classList.toggle('is-open');
+                // ボタン自体の状態（×印用など）の切り替え
+               toggleBtn.classList.toggle('active');
+                //開いている時は背景をスクロールさせない
+                document.body.style.overflow = drawer.classList.contains('is-open') ? 'hidden' : '';
+            });
+        }
+
         drawerLinks.forEach(link => {
             link.addEventListener('click', () => {
-                // リンクをクリックしたらメニューを閉じる（is-openを外す）
                 drawer.classList.remove('is-open');
-                document.body.style.overflow = drawer.classList.contains('is-open') ? 'hidden' : '';
+                toggleBtn.classList.remove('active');
+                document.body.style.overflow = ''; // スクロール禁止を解除
             });
         });
     </script>
