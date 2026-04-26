@@ -99,7 +99,7 @@ img {
 /* mene-sp */
 .sp-header {
     background: white;
-    padding: 12px 16px;
+    padding: 0px 16px;
     border-bottom: 1px solid #ddd;
     position: sticky;
     top: 0;
@@ -251,7 +251,7 @@ img {
     background-color: var(--skin-color);
     width: min(var(--about-max), 100% - 2.4rem);
     margin-inline: auto;
-    padding: 120px 0 65px 0;
+    padding: 65px 0 65px 0;
 }
 
 .about__title_color {
@@ -373,7 +373,7 @@ img {
 .lineup__container {
     width: min(var(--container-max), 100% - 2.4rem);
     margin-inline: auto;
-    padding: 120px 0 1px 0;
+    padding: 65px 0 1px 0;
 }
 
 /* 上部キャッチ */
