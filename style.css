@@ -89,11 +89,13 @@ img {
 
 /* メニューボタン */
 .sp-header__menu-btn {
+    position: relative;
     background: none;
     border: none;
     padding: 0;
     width: 28px;
     height: 28px;
+    z-index: 1001;
 }
 
 .sp-header__inner {
@@ -145,7 +147,7 @@ img {
     background: var(--skin-color);
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
     transition: right 0.3s ease;
-    z-index: 1001;
+    z-index: 999;
     padding: 100px 0px;
 }
 
@@ -546,7 +548,7 @@ img {
     position: relative;
     margin: 0;
     text-align: center;
-    font-size: clamp(12px, 2.8vw, 15px);
+    font-size: 10px;
     opacity: .85;
 }
 
