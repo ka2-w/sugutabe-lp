@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="「スグ食べ」は、厳選したオーガニック農家さんの獲れたて野菜を販売しています。最短で24時間以内に届く新鮮なオーガニック野菜宅配サービスです。">
+    <title>スグ食べ SUGU TABE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- spのヘッダー -->
+    <header class="sp-header">
+        <div class="sp-header__inner">
+            <h1 class="sp-header__logo">
+                <a href="index.html"><img src="images/logo.svg" alt="スグ食べ"></a>
+            </h1>
+            <!-- sp -->
+            <button id="drawer-toggle" class="sp-header__menu-btn" aria-label="メニューを開く">
+                <img src="images/icon-menu.svg" alt="メニュー">
+            </button>
+        </div>
+    </header>
+    <!-- PCのヘッダー -->
+    <header class="pc-header">
+        <div class="pc-header__inner">
+            <h1 class="pc-header__logo">
+                <a href="index.html">
+                    <img src="images/(pc)logo.svg" alt="スグ食べ">
+                </a>
+            </h1>
+            <nav class="pc-nav">
+                <ul class="pc-nav__list">
+                    <li class="pc-nav__item">
+                        <span class="pc-nav__jp">スグ食べとは</span>
+                        <a href="#about" class="pc-nav__en">ABOUT</a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <span class="pc-nav__jp">お試し野菜</span>
+                        <a href="#trial" class="pc-nav__en">TRIAL</a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <span class="pc-nav__jp">契約農家</span>
+                        <a href="#farmers" class="pc-nav__en">FARMARS</a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <span class="pc-nav__jp">お客様の声</span>
+                        <a href="#voice" class="pc-nav__en">VOICE</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ドロワーメニュー -->
+    <nav class="drawer" id="drawer">
+        <ul class="drawer__list">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#trial">TRIAL</a></li>
+            <li><a href="#farmers">FARMARS</a></li>
+            <li><a href="#voice">VOICE</a></li>
+        </ul>
+    </nav>
+
+    <!-- ここはmain -->
+    <main class="main">
+        <article class="top_page">
+            <section class="vf">
+                <div class="vf__container">
+                    <!-- 画像 -->
+                    <div class="vf__media">
+                        <figure class="vf__figure">
+                            <!-- 画像パス -->
+                            <img class="vf__img-pc" src="images/fv__pc.jpg" alt="PC用画像">
+                            <img class="vf__img-sp" src="images/fv__sp.png" alt="スマホ用画像">
+                            <!-- リード文（画像の下の3行中心揃えテキスト） -->
+                            <div class="vf__txt" aria-label="サービス説明">
+                                <p class="vf-p">
+                                    「スグ食べ」は、厳選したオーガニック農家さんの獲れたて野菜を販売しています。<br>
+                                    食材から選べるのはもちろん、生産者からも選べます。<br>
+                                    生産方法や生産地、それぞれ異なるこだわりなどで、<br>お気に入りの農家さんを見つけてください。最短で24時間以内に届く新鮮なオーガニック野菜宅配サービスです。
+                                </p>
+                            </div>
+                            <!-- CTA（赤い楕円ボタン＋左の黒丸バッジ） -->
+                            <div class="vf__cta">
+                                <a class="vf__button" href="#order" role="button" aria-label="初回限定 お試しセットの注文">
+                                    <span class="vf__badge" aria-hidden="true">初回<br>限定</span>
+                                    <span class="vf__label">お試しセットの注文</span>
+                                </a>
+                            </div>
+                        </figure>
+                    </div>
+            </section>
+            <!-- about -->
+            <section id="about" class="about"> 
+            </section>
+            <!-- ↑ページ移動用 -->
+            <section class="about">
+                <div class="about__container">
+                    <!-- 見出し（左右に飾りラインはCSSで） -->
+                    <h2 class="about__title">
+                        <span class="about__title_color">スグ食べが選ばれる3つの理由</span>
+                    </h2>
+                    <!-- 3つの理由（SPは縦並び、PCは後で横3列にしてOK） -->
+                    <ul class="about__list" role="list">
+                        <!-- 1 -->
+                        <li class="about__item">
+                            <div class="about__head">
+                                <div class="about__badge">1</div>
+                                <h3 class="about__sec-title">本当の意味での産地直送</h3>
+                            </div>
+                            <div class="about__rule" aria-hidden="true"></div>
+                            <p class="about__text">
+                                「なるべく収穫したばかりの状態で、野菜を味わってほしい。」スグ食べでは既存の産地直送サービスのように箱詰め用の倉庫を介することはありません。農家が収穫したその日に、お客様の元へ直送で野菜をお送りします。
+                            </p>
+                        </li>
+
+                        <!-- 2 -->
+                        <li class="about__item">
+                            <div class="about__head">
+                                <div class="about__badge about__badge--green">2</div>
+                                <h3 class="about__sec-title">安心安全な無農薬野菜</h3>
+                            </div>
+                            <div class="about__rule" aria-hidden="true"></div>
+                            <p class="about__text">
+                                出品している生産者は、有機栽培もしくは自然栽培の農家のみ。全ての商品が無農薬・無化学肥料など、安全にこだわって生産された「オーガニック農作物」です。そのため、どの商品も安心してお買い求めいただけます。
+                            </p>
+                        </li>
+
+                        <!-- 3 -->
+                        <li class="about__item">
+                            <div class="about__head">
+                                <div class="about__badge about__badge--orange">3</div>
+                                <h3 class="about__sec-title">たくさんの旬な野菜との出会い</h3>
+                            </div>
+                            <div class="about__rule" aria-hidden="true"></div>
+                            <p class="about__text">
+                                年間数十種の野菜を作る生産者から、今が旬の多様な野菜が届きます。スグ食べでは生産者ごとに商品が異なります。中には年間100種類もの多品種生産をしている生産者も。旬な野菜はもちろん、珍しい野菜とも出会えます。
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- lineup -->
+             <section id="trial" class="lineup">
+            </section>
+            <!-- ↑ページ移動用 -->
+            <section class="lineup">
+                <div class="lineup__container">
+                    <!-- 上部キャッチコピー -->
+                    <p class="lineup__catch">＼自身があるから、是非食べてもらいたい／</p>
+
+                    <!-- 見出し（左にリボン風バッジ＋タイトル） -->
+                    <header class="lineup__header">
+                        <span class="lineup__ribbon">一回限り！</span>
+                        <h2 id="lineup-title" class="lineup__title">少量お試しセット</h2>
+                    </header>
+
+                    <!-- 区切り線 -->
+                    <div class="lineup__rule" aria-hidden="true"></div>
+
+                    <!-- 商品リスト -->
+                    <ul class="lineup__list" role="list">
+                        <!-- item 1 -->
+                        <li class="lineup__item">
+                            <figure class="lineup__media">
+                                <!-- 画像は正方形＋角丸想定。パス差し替え -->
+                                <img class="lineup__img" src="images/set1.png" alt="【ベジックス】旬★お試し野菜セット（6品目）">
+                            </figure>
+                            <div class="lineup__body">
+                                <p class="lineup__brand">【ベジックス】</p>
+                                <h3 class="lineup__name">旬*お試し野菜セット（6品目）</h3>
+                                <p class="lineup__price"><span class="lineup__price-amt">¥1,280</span><span
+                                        class="lineup__price-note">（税込／送料別）</span></p>
+                                <dl class="lineup__meta">
+                                    <div class="lineup__meta-row">
+                                        <dt>生産者：</dt>
+                                        <dd>千葉県 松戸市<br>ベジックス</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <!-- item 2 -->
+                        <li class="lineup__item">
+                            <figure class="lineup__media">
+                                <img class="lineup__img" src="images/set2.png" alt="【くちぶえ農園】旬★お試し野菜セット（6品目）">
+                            </figure>
+                            <div class="lineup__body">
+                                <p class="lineup__brand">【ベジックス】</p>
+                                <h3 class="lineup__name">旬*お試し野菜セット（6品目）</h3>
+                                <p class="lineup__price"><span class="lineup__price-amt">¥1,280</span><span
+                                        class="lineup__price-note">（税込／送料別）</span></p>
+                                <dl class="lineup__meta">
+                                    <div class="lineup__meta-row">
+                                        <dt>生産者：</dt>
+                                        <dd>長野県 飯田市<br>くちぶえ農園</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- CTA（赤い楕円ボタン＋左の黒丸バッジ） -->
+                    <div class="vf__cta">
+                        <a class="vf__button" href="#order" role="button" aria-label="初回限定 お試しセットの注文">
+                            <span class="vf__badge" aria-hidden="true">初回<br>限定</span>
+                            <span class="vf__label">お試しセットの注文</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- hosyou -->
+            <section class="hosyou">
+                <div class="hosyou__container">
+                    <!-- 上部キャッチ -->
+                    <p class="hosyou__catch">＼商品に不備があった際には、スグ食べが“全額”返品対応します／</p>
+
+                    <!-- 見出し（帯付き想定） -->
+                    <h2 id="hosyou-title" class="hosyou__title">
+                        <span>スグ食べの品質保証</span>
+                    </h2>
+
+                    <!-- 強調リード（赤字） -->
+                    <p class="hosyou__lead">
+                        商品に不備があった際には、スグ食べが全額返品対応します
+                    </p>
+
+                    <!-- 吹き出しブロック -->
+                    <div class="hosyou__bubble" role="note" aria-label="品質保証のご案内">
+                        <p class="hosyou__bubble-text">
+                            実物を見ずに野菜や果物を購入するのはちょっと不安…<br>
+                            そんな方にも安心してご購入いただけるように、スグ食べでは品質保証をお約束しています。<br>
+                            万が一届いた商品に不備があった際には、スグ食べにて<br>
+                            全額返金対応いたします。
+                        </p>
+                    </div>
+
+                    <!-- 吹き出しの点（飾り） -->
+                    <div class="hosyou__dots" aria-hidden="true">
+                        <span class="hosyou__dot"></span>
+                        <span class="hosyou__dot"></span>
+                    </div>
+
+                    <!-- 画像（角丸＋枠） -->
+                    <figure class="hosyou__figure">
+                        <img class="hosyou__img" src="images/hosyou.png" alt="生産者とお客様の信頼を示す握手の写真">
+                    </figure>
+                </div>
+            </section>
+
+            <!-- actual -->
+            <section class="actual">
+                <div class="actual__container">
+                    <!-- 上部キャッチ（両端に飾り線はCSSで） -->
+                    <p class="actual__catch">＼実はまだこんなに少ない、日本のオーガニック農家／</p>
+
+                    <!-- 見出し（太字・オレンジ想定） -->
+                    <h2 id="actual-title" class="actual__title">
+                        <span>
+                            オーガニック農家は、<br>国内全体の約0.5%
+                        </span>
+                    </h2>
+
+                    <!-- 説明文（画像の改行に合わせて段落を分割） -->
+                    <div class="actual__body">
+                        <p>
+                            最近はレストランなどでもよく目にするのでもっとたくさんあるかと思いきや、実は
+                            オーガニック農家は国内農家の<span class="actual__em">0.5%</span>しか存在していません。
+                        </p>
+                        <p>
+                            でもその0.5%のオーガニック農家は、健やかな野菜を安心して食べてもらいたいという
+                            強い気持ちで大切に野菜を作っています。スグ食べでは、そんな農家さんを厳選し、
+                            出品していただいています。
+                        </p>
+                        <p>
+                            農家さんによって栽培方法も違います。自分や家族の体を作る礎となる野菜の栽培方法、
+                            この際に把握してみては？
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- method -->
+            <section class="method">
+                <div class="method__container">
+                    <!-- 見出し（淡い帯付き想定） -->
+                    <h2 id="method-title" class="method__title">
+                        きちんと知っておきたい、栽培方法による違い
+                    </h2>
+
+                    <!-- グループ1：自然栽培（単独） -->
+                    <ul class="method__group method__group--single" role="list">
+                        <li class="method__item">
+                            <figure class="method__icon method__icon--natural">
+                                <figcaption class="method__icon-caption">
+                                    <span class="method__icon-name">自然栽培</span>
+                                    <span class="method__cert method__cert--none">第三者機関認証<span
+                                            class="method__none">ナシ</span>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                            <p class="method__desc">
+                                農薬・肥料・堆肥など<br>一切使用しません
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="method__rule" aria-hidden="true"></div>
+
+                    <!-- グループ2：有機栽培／無農薬栽培（2列） -->
+                    <ul class="method__group method__group--double" role="list">
+                        <li class="method__item">
+                            <figure class="method__icon method__icon--organic">
+                                <figcaption class="method__icon-caption">
+                                    <span class="method__icon-name">有機栽培</span>
+                                    <span class="method__cert method__cert--yes">第三者機関認証<span
+                                            class="method__yes">アリ</span>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="method__item">
+                            <figure class="method__icon method__icon--pesticidefree">
+                                <figcaption class="method__icon-caption">
+                                    <span class="method__icon-name">無農薬栽培</span>
+                                    <span class="method__cert method__cert--none">第三者機関認証<span
+                                            class="method__none">ナシ</span>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <p class="method__desc method__desc--note">
+                        有機の農薬・肥料・堆肥だけを使用しています
+                    </p>
+
+                    <div class="method__rule" aria-hidden="true"></div>
+
+                    <!-- グループ3：特別栽培／減農薬栽培（2列） -->
+                    <ul class="method__group method__group--double" role="list">
+                        <li class="method__item">
+                            <figure class="method__icon method__icon--special">
+                                <figcaption class="method__icon-caption">
+                                    <span class="method__icon-name">特別栽培</span>
+                                    <span class="method__cert method__cert--yes">第三者機関認証<span
+                                            class="method__yes">アリ</span>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="method__item">
+                            <figure class="method__icon method__icon--reduced">
+                                <figcaption class="method__icon-caption">
+                                    <span class="method__icon-name">減農薬栽培</span>
+                                    <span class="method__cert method__cert--none">第三者機関認証<span
+                                            class="method__none">ナシ</span>
+                                    </span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <p class="method__desc method__desc--note">
+                        化学農薬・肥料・堆肥も使用しますが、<br>基準値の50%以下だけ
+                    </p>
+                </div>
+            </section>
+
+            <!-- farmer -->
+             <section id="farmers" class="farmer">
+            </section>
+            <!-- ↑ページ移動用 -->
+            <section class="farmer">
+                <div class="farmer__container">
+                    <!-- 上部キャッチ（左右ラインはCSSで） -->
+                    <p class="farmer__catch">＼こんな農家さんが登録しています／</p>
+
+                    <!-- メインタイトル -->
+                    <h2 id="farmer-title" class="farmer__title">
+                        私たちの野菜、<br>こんなにおいしいんです
+                    </h2>
+
+                    <!-- サブタイトル -->
+                    <p class="farmer__subtitle">安心安全なお野菜を、ご堪能ください</p>
+
+                    <!-- 生産者名 -->
+                    <p class="farmer__producer">ひだまり農家（岡山県） 山田洋一</p>
+
+                    <!-- 説明文 -->
+                    <div class="farmer__body">
+                        <p>
+                            「ひだまり農家」では栽培期間中に農薬・化学肥料を一切使用せず、
+                            年間約100種類の野菜と米、卵を生産しています。
+                            堆肥・肥料もすべて手作りし、有機質のものを使用しています。
+                        </p>
+                    </div>
+
+                    <!-- 画像スライダー（1枚例。複数なら<li>を追加） -->
+                    <div class="farmer__slider" role="region" aria-label="農家の様子">
+                        <button class="farmer__nav farmer__nav--prev" type="button" aria-label="前の写真へ">&lsaquo;</button>
+
+                        <ul class="farmer__slides" role="list">
+                            <!-- 1 -->
+                            <li class="farmer__slide is-current">
+                                <figure class="farmer__figure">
+                                    <img class="farmer__img farmer__img-pc" src="images/nouka_pc_1.jpg"
+                                        alt="畑で作業する農家の様子">
+                                    <img class="farmer__img farmer__img-sp" src="images/nouka_sp_1.jpg"
+                                        alt="畑で作業する農家の様子">
+                                </figure>
+                            </li>
+                            <!-- 2 -->
+                            <li class="farmer__slide">
+                                <figure class="farmer__figure">
+                                    <img class="farmer__img farmer__img-pc" src="images/nouka_pc_2.jpg"
+                                        alt="畑で作業する農家の様子">
+                                    <img class="farmer__img farmer__img-sp" src="images/nouka_sp_2.jpg"
+                                        alt="畑で作業する農家の様子">
+                                </figure>
+                            </li>
+                            <!-- 3 -->
+                            <li class="farmer__slide">
+                                <figure class="farmer__figure">
+                                    <img class="farmer__img farmer__img-pc" src="images/nouka_pc_3.jpg"
+                                        alt="畑で作業する農家の様子">
+                                    <img class="farmer__img farmer__img-sp" src="images/nouka_sp_3.jpg"
+                                        alt="畑で作業する農家の様子">
+                                </figure>
+                            </li>
+                            <!-- 追加スライド例
+                            <li class="farmer__slide">
+                            <figure class="farmer__figure">
+                                <img class="farmer__img" src="images/farmer-02.jpg" alt="収穫した野菜の写真">
+                            </figure>
+                            </li>
+                            -->
+                        </ul>
+
+                        <button class="farmer__nav farmer__nav--next" type="button" aria-label="次の写真へ">&rsaquo;</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- review -->
+             <section id="voice" class="review">
+            </section>
+            <!-- ↑ページ移動用 -->
+            <section class="review">
+                <div class="review__container">
+                    <!-- 上部キャッチ（左右に飾り線はCSSで） -->
+                    <p class="review__catch">＼おかげさまでこんな感謝の声届いてます／</p>
+
+                    <!-- タイトル -->
+                    <h2 id="review-title" class="review__title">食べてわかった、この違い。</h2>
+
+                    <!-- スライダー（左右に小さな丸ボタン） -->
+                    <div class="review__slider" role="region" aria-label="お客様の声">
+                        <button class="review__nav review__nav--prev" type="button" aria-label="前へ">&lsaquo;</button>
+
+                        <ul class="review__slides" role="list">
+                            <!-- 1 -->
+                            <li class="review__slide is-current">
+                                <article class="review__card">
+                                    <!-- 左側：丸画像 -->
+                                    <figure class="review__figure">
+                                        <img class="review__img" src="images/review1.png" alt="お客様の写真">
+                                    </figure>
+
+                                    <!-- 右側：テキスト -->
+                                    <div class="review__body">
+                                        <h3 class="review__headline">香りまでおいしい、新鮮さ</h3>
+                                        <p class="review__meta">神奈川県A様</p>
+                                        <p class="review__text">
+                                            箱を開けた途端に広がった野菜の香り。スーパーで買った野菜とはどうしてこんなに違いがあるのか
+                                            びっくりするほど豊かな大地の香りです。葉っぱまでシャキシャキのにんじんは特に子供がお気に入り。<br>
+                                            ゆでただけでも、野菜の甘みが優しく広がり、本来の味が楽しめます。
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <!-- 2 -->
+                            <li class="review__slide">
+                                <article class="review__card">
+                                    <!-- 左側：丸画像 -->
+                                    <figure class="review__figure">
+                                        <img class="review__img" src="images/review2.png" alt="お客様の写真">
+                                    </figure>
+
+                                    <!-- 右側：テキスト -->
+                                    <div class="review__body">
+                                        <h3 class="review__headline">安心できる品質に大満足</h3>
+                                        <p class="review__meta">千葉県O様</p>
+                                        <p class="review__text">
+                                            無農薬・無科学肥料にこだわった生産者から送られてくるため、とても安心して毎日食卓に出せるのが嬉しいです。
+                                            小さな子供や働き盛りの夫など、健康に気を遣って食から体づくりをしたい我が家には、もう手放せない野菜となっています。
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+                            <!-- 3 -->
+                            <li class="review__slide">
+                                <article class="review__card">
+                                    <!-- 左側：丸画像 -->
+                                    <figure class="review__figure">
+                                        <img class="review__img" src="images/review3.png" alt="お客様の写真">
+                                    </figure>
+
+                                    <!-- 右側：テキスト -->
+                                    <div class="review__body">
+                                        <h3 class="review__headline">旬の野菜が食べれる豊かさ</h3>
+                                        <p class="review__meta">東京都M様</p>
+                                        <p class="review__text">
+                                            鮮度にこだわる「スグ食べ」だからこそ、旬になった野菜を「今だ！」と送ってきてくれるので、食卓に並ぶ野菜は常に旬の野菜です。
+                                            一カ所の農家さんからではなく複数の農家さんから選べるので、地域のよっての旬の違いも楽しめます。
+                                            たまに、スーパーに並ばないような珍しい野菜がまざるのも、わくわくしますね。
+                                        </p>
+                                    </div>
+                                </article>
+                            </li>
+
+                            <!-- 2枚目以降は li を複製 -->
+                            <!--
+                                    <li class="review__slide">
+                                    <article class="review__card">…</article>
+                                    </li>
+                                    -->
+                        </ul>
+
+                        <button class="review__nav review__nav--next" type="button" aria-label="次へ">&rsaquo;</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Q&A -->
+            <section class="qa">
+                <div class="qa__container">
+                    <!-- 見出し -->
+                    <h2 id="qa-title" class="qa__title">よくある質問</h2>
+
+                    <!-- 質問一覧（画像はカード2つ） -->
+                    <dl class="qa__list">
+                        <!-- Q1 -->
+                        <div class="qa__card">
+                            <dt class="qa__qrow">
+                                <span class="qa__icon qa__icon--q">
+                                    <!-- QのSVG -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                                        fill="none">
+                                        <path
+                                            d="M20.1789 10.4297C20.2102 5.01108 15.8432 0.593262 10.4245 0.561944C5.00584 0.530627 0.588021 4.89767 0.556704 10.3163C0.525386 15.735 4.89243 20.1528 10.3111 20.1841C12.0977 20.1945 13.7772 19.7264 15.2242 18.8998L19.6345 19.7475L18.8378 15.3277C19.7087 13.8418 20.1713 12.1521 20.1789 10.4297Z"
+                                            fill="#FFC072" stroke="black" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <text x="50%" y="60%" text-anchor="middle" dominant-baseline="middle"
+                                            font-size="12" font-weight="bold" fill="#fff">Q</text>
+                                    </svg>
+                                </span>
+                                <span class="qa__qtext">産地直送のサービスってよく見るけど何が違うの？</span>
+                            </dt>
+
+                            <dd class="qa__arow">
+                                <div class="qa__ahead">
+                                    <span class="qa__icon qa__icon--a">
+                                        <!-- AのSVG -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                                            viewBox="0 0 21 22" fill="none">
+                                            <path
+                                                d="M20.1789 11.0621C20.2102 5.6434 15.8432 1.22559 10.4245 1.19427C5.00584 1.16295 0.588021 5.52999 0.556704 10.9487C0.525386 16.3673 4.89243 20.7852 10.3111 20.8165C12.0977 20.8268 13.7772 20.3587 15.2242 19.5321L19.6345 20.3798L18.8378 15.96C19.7087 14.4741 20.1713 12.7844 20.1789 11.0621Z"
+                                                fill="#FF7272" stroke="black" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <text x="50%" y="60%" text-anchor="middle" dominant-baseline="middle"
+                                                font-size="12" font-weight="bold" fill="#fff">A</text>
+                                        </svg>
+                                    </span>
+                                    <span class="qa__ashort">鮮度が違います</span>
+                                </div>
+                                <p class="qa__atext">
+                                    通常の産直サービスは、一度倉庫に集め、そこで箱詰め作業をして配送しています。
+                                    この仕組みでは、お客様が商品を受け取る時には収穫してから3,4日が経過しています。
+                                    スグ食べでは、箱詰め作業を農家さんにお願いすることにより、最短で収穫当日に商品を受け取ることができます。
+                                </p>
+                            </dd>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="qa__card">
+                            <dt class="qa__qrow">
+                                <span class="qa__icon qa__icon--q">
+                                    <!-- QのSVG -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                                        fill="none">
+                                        <path
+                                            d="M20.1789 10.4297C20.2102 5.01108 15.8432 0.593262 10.4245 0.561944C5.00584 0.530627 0.588021 4.89767 0.556704 10.3163C0.525386 15.735 4.89243 20.1528 10.3111 20.1841C12.0977 20.1945 13.7772 19.7264 15.2242 18.8998L19.6345 19.7475L18.8378 15.3277C19.7087 13.8418 20.1713 12.1521 20.1789 10.4297Z"
+                                            fill="#FFC072" stroke="black" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <text x="50%" y="60%" text-anchor="middle" dominant-baseline="middle"
+                                            font-size="12" font-weight="bold" fill="#fff">Q</text>
+                                    </svg>
+                                </span>
+                                <span class="qa__qtext">どんな農家さんが登録しているの？</span>
+                            </dt>
+                            <dd class="qa__arow">
+                                <div class="qa__ahead">
+                                    <span class="qa__icon qa__icon--a">
+                                        <!-- AのSVG -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22"
+                                            viewBox="0 0 21 22" fill="none">
+                                            <path
+                                                d="M20.1789 11.0621C20.2102 5.6434 15.8432 1.22559 10.4245 1.19427C5.00584 1.16295 0.588021 5.52999 0.556704 10.9487C0.525386 16.3673 4.89243 20.7852 10.3111 20.8165C12.0977 20.8268 13.7772 20.3587 15.2242 19.5321L19.6345 20.3798L18.8378 15.96C19.7087 14.4741 20.1713 12.7844 20.1789 11.0621Z"
+                                                fill="#FF7272" stroke="black" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <text x="50%" y="60%" text-anchor="middle" dominant-baseline="middle"
+                                                font-size="12" font-weight="bold" fill="#fff">A</text>
+                                        </svg>
+                                    </span>
+                                    <span class="qa__ashort">無農薬にこだわる、オーガニック農家さんのみが登録しています。</span>
+                                </div>
+                                <p class="qa__atext">
+                                    有機栽培や自然栽培などの環境に配慮した農法で生産するには、通常以上に手間も費用もかかります。
+                                    そんな中でも「安心な野菜を食べて欲しい」という思いを持って、こだわって野菜を作っている
+                                    農家さんがいます。厳選されたオーガニック農家さんのみが登録しているため、
+                                    安心してお買い物を楽しんでいただけます。
+                                </p>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+            </section>
+
+            <!-- lineup2 -->
+            <section class="lineup">
+                <div class="lineup__container">
+                    <!-- 上部キャッチコピー -->
+                    <p class="lineup__catch">＼自身があるから、是非食べてもらいたい／</p>
+
+                    <!-- 見出し（左にリボン風バッジ＋タイトル） -->
+                    <header class="lineup__header">
+                        <span class="lineup__ribbon">一回限り！</span>
+                        <h2 id="lineup2-title" class="lineup__title">少量お試しセット</h2>
+                    </header>
+
+                    <!-- 区切り線 -->
+                    <div class="lineup__rule" aria-hidden="true"></div>
+
+                    <!-- 商品リスト -->
+                    <ul class="lineup__list" role="list">
+                        <!-- item 1 -->
+                        <li class="lineup__item">
+                            <figure class="lineup__media">
+                                <!-- 画像は正方形＋角丸想定。パス差し替え -->
+                                <img class="lineup__img" src="images/set1.png" alt="【ベジックス】旬★お試し野菜セット（6品目）">
+                            </figure>
+                            <div class="lineup__body">
+                                <p class="lineup__brand">【ベジックス】</p>
+                                <h3 class="lineup__name">旬*お試し野菜セット（6品目）</h3>
+                                <p class="lineup__price"><span class="lineup__price-amt">¥1,280</span><span
+                                        class="lineup__price-note">（税込／送料別）</span></p>
+                                <dl class="lineup__meta">
+                                    <div class="lineup__meta-row">
+                                        <dt>生産者：</dt>
+                                        <dd>千葉県 松戸市<br>ベジックス</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </li>
+
+                        <!-- item 2 -->
+                        <li class="lineup__item">
+                            <figure class="lineup__media">
+                                <img class="lineup__img" src="images/set2.png" alt="【くちぶえ農園】旬★お試し野菜セット（6品目）">
+                            </figure>
+                            <div class="lineup__body">
+                                <p class="lineup__brand">【ベジックス】</p>
+                                <h3 class="lineup__name">旬*お試し野菜セット（6品目）</h3>
+                                <p class="lineup__price"><span class="lineup__price-amt">¥1,280</span><span
+                                        class="lineup__price-note">（税込／送料別）</span></p>
+                                <dl class="lineup__meta">
+                                    <div class="lineup__meta-row">
+                                        <dt>生産者：</dt>
+                                        <dd>長野県 飯田市<br>くちぶえ農園</dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- CTA（赤い楕円ボタン＋左の黒丸バッジ） -->
+                    <div class="vf__cta">
+                        <a class="vf__button" href="#order" role="button" aria-label="初回限定 お試しセットの注文">
+                            <span class="vf__badge" aria-hidden="true">初回<br>限定</span>
+                            <span class="vf__label">お試しセットの注文</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- ここはfooter -->
+    <footer class="footer">
+    </footer>
+
+    <!--（JavaScript）を埋め込み -->
+    <script>
+        const toggleBtn = document.getElementById('drawer-toggle');
+        const drawer = document.getElementById('drawer');
+
+        toggleBtn.addEventListener('click', () => {
+            drawer.classList.toggle('is-open');
+        });
+    </script>
+
+    <!--drawer mene  -->
+    <script>
+        // ドロワー内の全てのリンクを取得
+        const drawerLinks = document.querySelectorAll('.drawer__list a');
+
+        // 各リンクに対してクリックイベントを設定
+        drawerLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // リンクをクリックしたらメニューを閉じる（is-openを外す）
+                drawer.classList.remove('is-open');
+                document.body.style.overflow = drawer.classList.contains('is-open') ? 'hidden' : '';
+            });
+        });
+    </script>
+
+    <!-- 農家さんの写真スライド -->
+    <script>
+        const slides = document.querySelectorAll('.farmer__slide');
+        const prevBtn = document.querySelector('.farmer__nav--prev');
+        const nextBtn = document.querySelector('.farmer__nav--next');
+        let current = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('is-current', i === index);
+            });
+        }
+
+        prevBtn.addEventListener('click', () => {
+            current = (current - 1 + slides.length) % slides.length;
+            showSlide(current);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        });
+
+        // 初期表示
+        showSlide(current);
+    </script>
+    <!-- レビュースライド -->
+    <script>
+        const reviewSlides = document.querySelectorAll('.review__slide');
+        const prevReviewBtn = document.querySelector('.review__nav--prev');
+        const nextReviewBtn = document.querySelector('.review__nav--next');
+        let reviewIndex = 0;
+
+        function showReviewSlide(index) {
+            reviewSlides.forEach((slide, i) => {
+                slide.classList.toggle('is-current', i === index);
+            });
+        }
+
+        prevReviewBtn.addEventListener('click', () => {
+            reviewIndex = (reviewIndex - 1 + reviewSlides.length) % reviewSlides.length;
+            showReviewSlide(reviewIndex);
+        });
+
+        nextReviewBtn.addEventListener('click', () => {
+            reviewIndex = (reviewIndex + 1) % reviewSlides.length;
+            showReviewSlide(reviewIndex);
+        });
+
+        // 初期表示
+        showReviewSlide(reviewIndex);
+    </script>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <img src="images/logo.svg" alt="スグ食べロゴ" class="footer__logo">
+            </div>
+            <small class="footer__copyright">
+                Copyright©2025 kawanoyuta
+            </small>
+        </div>
+    </footer>
+</body>
+
+</html>
